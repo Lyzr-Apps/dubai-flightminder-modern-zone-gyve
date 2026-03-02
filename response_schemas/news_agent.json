@@ -1,0 +1,26 @@
+{
+  "agent_name": "Dubai Official News Agent",
+  "agent_id": "69a4e7c6f42837c6d016fbe4",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "is_independent": true,
+  "has_knowledge_base": true,
+  "rag_id": "69a4ddfbf572c99c0ffc04e0",
+  "response_schema": {
+    "news_items": [
+      {
+        "headline": "string",
+        "summary": "string",
+        "source": "string",
+        "published_date": "string",
+        "category": "string",
+        "severity": "string",
+        "url": "string"
+      }
+    ],
+    "last_updated": "string",
+    "total_items": "string",
+    "filter_applied": "string"
+  }
+}

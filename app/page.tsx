@@ -10,9 +10,11 @@ import DashboardSection, { type MonitoredFlight } from './sections/DashboardSect
 import AlertHistorySection, { type AlertEntry } from './sections/AlertHistorySection'
 import FlightDetailSection from './sections/FlightDetailSection'
 import SettingsSection from './sections/SettingsSection'
+import NewsSection from './sections/NewsSection'
 
 const MANAGER_AGENT_ID = '69a4de49671c26b86a9ea9dd'
 const NOTIFICATION_AGENT_ID = '69a4de3118aa743b7cdb515b'
+const NEWS_AGENT_ID = '69a4e7c6f42837c6d016fbe4'
 
 function parseAgentResponse(result: any): any {
   try {
@@ -262,7 +264,7 @@ export default function Page() {
               )}
               {activeAgentId && (
                 <Badge variant="outline" className="text-[10px] h-4 px-1">
-                  Agent: {activeAgentId === MANAGER_AGENT_ID ? 'Manager' : 'Notification'}
+                  Agent: {activeAgentId === MANAGER_AGENT_ID ? 'Manager' : activeAgentId === NEWS_AGENT_ID ? 'News' : 'Notification'}
                 </Badge>
               )}
             </div>
@@ -296,6 +298,9 @@ export default function Page() {
               onCheckNow={handleCheckNow}
             />
           )}
+          {activeView === 'news' && (
+            <NewsSection sampleMode={sampleMode} />
+          )}
           {activeView === 'settings' && (
             <SettingsSection settings={settings} onUpdateSettings={setSettings} />
           )}
@@ -310,6 +315,10 @@ export default function Page() {
               <span className={`inline-flex items-center gap-1 ${activeAgentId === NOTIFICATION_AGENT_ID ? 'text-primary' : ''}`}>
                 <span className={`w-1.5 h-1.5 rounded-full ${activeAgentId === NOTIFICATION_AGENT_ID ? 'bg-primary animate-pulse' : 'bg-muted-foreground'}`} />
                 Notification
+              </span>
+              <span className={`inline-flex items-center gap-1 ${activeAgentId === NEWS_AGENT_ID ? 'text-primary' : ''}`}>
+                <span className={`w-1.5 h-1.5 rounded-full ${activeAgentId === NEWS_AGENT_ID ? 'bg-primary animate-pulse' : 'bg-muted-foreground'}`} />
+                News
               </span>
             </div>
             <span className="text-[10px] text-muted-foreground">Dubai International Airport (DXB)</span>

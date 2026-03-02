@@ -31,6 +31,13 @@
         "69a4de30c7ef7478ccec292d",
         "69a4de319df18c326fa9b62c"
       ]
+    },
+    "news_agent": {
+      "id": "69a4e7c6f42837c6d016fbe4",
+      "name": "Dubai Official News Agent",
+      "type": "independent",
+      "has_kb": true,
+      "rag_id": "69a4ddfbf572c99c0ffc04e0"
     }
   },
   "knowledge_base": {

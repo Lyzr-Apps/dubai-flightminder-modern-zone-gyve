@@ -1,0 +1,40 @@
+{
+  "agent_name": "Dubai Official News Agent",
+  "agent_id": "69a4e7c6f42837c6d016fbe4",
+  "description": "Retrieves and presents official news from Dubai government media sources (Dubai Media Office, GCAA) about airports, flights, aviation updates, travel advisories, and airport operations. Only surfaces verified government news.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "news_items": [
+      {
+        "headline": "string",
+        "summary": "string",
+        "source": "string",
+        "published_date": "string",
+        "category": "string",
+        "severity": "string",
+        "url": "string"
+      }
+    ],
+    "last_updated": "string",
+    "total_items": "string",
+    "filter_applied": "string"
+  },
+  "example_response": {
+    "news_items": [
+      {
+        "headline": "sample string",
+        "summary": "sample string",
+        "source": "sample string",
+        "published_date": "sample string",
+        "category": "sample string",
+        "severity": "sample string",
+        "url": "sample string"
+      }
+    ],
+    "last_updated": "sample string",
+    "total_items": "sample string",
+    "filter_applied": "sample string"
+  }
+}

@@ -1,11 +1,11 @@
 'use client'
 
-import { IoAirplane, IoNotifications, IoSettings, IoTime, IoHome, IoRadio } from 'react-icons/io5'
+import { IoAirplane, IoNotifications, IoSettings, IoTime, IoHome, IoRadio, IoNewspaper } from 'react-icons/io5'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 
-export type ScreenView = 'dashboard' | 'alerts' | 'detail' | 'settings'
+export type ScreenView = 'dashboard' | 'alerts' | 'detail' | 'settings' | 'news'
 
 interface SidebarProps {
   activeView: ScreenView
@@ -17,6 +17,7 @@ interface SidebarProps {
 
 const NAV_ITEMS: { id: ScreenView; label: string; icon: React.ReactNode }[] = [
   { id: 'dashboard', label: 'Dashboard', icon: <IoHome className="w-4 h-4" /> },
+  { id: 'news', label: 'Official News', icon: <IoNewspaper className="w-4 h-4" /> },
   { id: 'alerts', label: 'Alert History', icon: <IoNotifications className="w-4 h-4" /> },
   { id: 'detail', label: 'Flight Detail', icon: <IoAirplane className="w-4 h-4" /> },
   { id: 'settings', label: 'Settings', icon: <IoSettings className="w-4 h-4" /> },
@@ -76,8 +77,8 @@ export default function Sidebar({ activeView, onNavigate, flightCount, alertCoun
       </div>
 
       <div className="px-4 py-2 border-t border-sidebar-border">
-        <p className="text-[9px] text-muted-foreground">Agents: 5 total</p>
-        <p className="text-[9px] text-muted-foreground">Manager + 3 sub + Notification</p>
+        <p className="text-[9px] text-muted-foreground">Agents: 6 total</p>
+        <p className="text-[9px] text-muted-foreground">Manager + 3 sub + Notification + News</p>
       </div>
     </aside>
   )
