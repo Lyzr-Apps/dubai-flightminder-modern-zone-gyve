@@ -1,0 +1,47 @@
+{
+  "agents": {
+    "official_source_agent": {
+      "id": "69a4de30c7ef7478ccec292b",
+      "name": "Official Source Agent",
+      "type": "sub-agent",
+      "has_kb": true,
+      "rag_id": "69a4ddfbf572c99c0ffc04e0"
+    },
+    "verifier_agent": {
+      "id": "69a4de30c7ef7478ccec292d",
+      "name": "Flight Status Verifier Agent",
+      "type": "sub-agent"
+    },
+    "shelter_agent": {
+      "id": "69a4de319df18c326fa9b62c",
+      "name": "Shelter & Routing Agent",
+      "type": "sub-agent"
+    },
+    "notification_agent": {
+      "id": "69a4de3118aa743b7cdb515b",
+      "name": "Notification Dispatch Agent",
+      "type": "independent"
+    },
+    "manager_agent": {
+      "id": "69a4de49671c26b86a9ea9dd",
+      "name": "Flight Monitor Manager",
+      "type": "manager",
+      "managed_agents": [
+        "69a4de30c7ef7478ccec292b",
+        "69a4de30c7ef7478ccec292d",
+        "69a4de319df18c326fa9b62c"
+      ]
+    }
+  },
+  "knowledge_base": {
+    "rag_id": "69a4ddfbf572c99c0ffc04e0",
+    "rag_name": "dubaiflightdatakb3weq"
+  },
+  "schedule": {
+    "schedule_id": "69a4de4f25d4d77f732fd5d0",
+    "agent_id": "69a4de49671c26b86a9ea9dd",
+    "cron_expression": "*/10 * * * *",
+    "timezone": "Asia/Dubai",
+    "is_active": false
+  }
+}

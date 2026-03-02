@@ -1,0 +1,42 @@
+{
+  "agent_name": "Flight Monitor Manager",
+  "agent_id": "69a4de49671c26b86a9ea9dd",
+  "description": "Coordinates sub-agents to detect flight disruptions, verify against official sources, and aggregate shelter/routing data into a notification-ready payload",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "flight_number": "string",
+    "airline": "string",
+    "route": "string",
+    "current_status": "string",
+    "status_detail": "string",
+    "verified_source": "string",
+    "last_checked": "string",
+    "is_disruption": "boolean",
+    "original_time": "string",
+    "new_time": "string",
+    "shelter_name": "string",
+    "shelter_distance": "string",
+    "voucher_eligible": "boolean",
+    "directions_url": "string",
+    "notification_payload": "string"
+  },
+  "example_response": {
+    "flight_number": "sample string",
+    "airline": "sample string",
+    "route": "sample string",
+    "current_status": "sample string",
+    "status_detail": "sample string",
+    "verified_source": "sample string",
+    "last_checked": "sample string",
+    "is_disruption": false,
+    "original_time": "sample string",
+    "new_time": "sample string",
+    "shelter_name": "sample string",
+    "shelter_distance": "sample string",
+    "voucher_eligible": false,
+    "directions_url": "sample string",
+    "notification_payload": "sample string"
+  }
+}

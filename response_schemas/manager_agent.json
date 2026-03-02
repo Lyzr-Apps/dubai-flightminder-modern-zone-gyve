@@ -1,0 +1,30 @@
+{
+  "agent_name": "Flight Monitor Manager",
+  "agent_id": "69a4de49671c26b86a9ea9dd",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "is_manager": true,
+  "managed_agent_ids": [
+    "69a4de30c7ef7478ccec292b",
+    "69a4de30c7ef7478ccec292d",
+    "69a4de319df18c326fa9b62c"
+  ],
+  "response_schema": {
+    "flight_number": "string",
+    "airline": "string",
+    "route": "string",
+    "current_status": "string",
+    "status_detail": "string",
+    "verified_source": "string",
+    "last_checked": "string",
+    "is_disruption": "boolean",
+    "original_time": "string",
+    "new_time": "string",
+    "shelter_name": "string",
+    "shelter_distance": "string",
+    "voucher_eligible": "boolean",
+    "directions_url": "string",
+    "notification_payload": "string"
+  }
+}

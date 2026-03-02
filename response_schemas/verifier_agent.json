@@ -1,0 +1,17 @@
+{
+  "agent_name": "Flight Status Verifier Agent",
+  "agent_id": "69a4de30c7ef7478ccec292d",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_schema": {
+    "flight_number": "string",
+    "verified_status": "string",
+    "confidence_level": "string",
+    "change_type": "string",
+    "original_time": "string",
+    "new_time": "string",
+    "verification_notes": "string",
+    "is_disruption_confirmed": "boolean"
+  }
+}

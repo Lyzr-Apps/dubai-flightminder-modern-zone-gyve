@@ -1,0 +1,17 @@
+{
+  "agent_name": "Notification Dispatch Agent",
+  "agent_id": "69a4de3118aa743b7cdb515b",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "is_independent": true,
+  "response_schema": {
+    "alert_reference": "string",
+    "flight_number": "string",
+    "sms_message": "string",
+    "whatsapp_message": "string",
+    "alert_type": "string",
+    "timestamp": "string",
+    "delivery_status": "string"
+  }
+}

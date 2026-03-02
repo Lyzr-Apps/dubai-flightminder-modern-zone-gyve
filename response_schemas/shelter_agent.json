@@ -1,0 +1,21 @@
+{
+  "agent_name": "Shelter & Routing Agent",
+  "agent_id": "69a4de319df18c326fa9b62c",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_schema": {
+    "shelters": [
+      {
+        "shelter_name": "string",
+        "address": "string",
+        "distance_km": "string",
+        "voucher_eligible": "boolean",
+        "directions_url": "string",
+        "contact_number": "string"
+      }
+    ],
+    "nearest_shelter": "string",
+    "fallback_helpline": "string"
+  }
+}

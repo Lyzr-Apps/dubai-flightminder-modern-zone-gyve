@@ -1,0 +1,17 @@
+{
+  "agent_name": "Official Source Agent",
+  "agent_id": "69a4de30c7ef7478ccec292b",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "has_knowledge_base": true,
+  "rag_id": "69a4ddfbf572c99c0ffc04e0",
+  "response_schema": {
+    "flight_number": "string",
+    "status": "string",
+    "source": "string",
+    "last_updated": "string",
+    "details": "string",
+    "official_announcement": "string"
+  }
+}
